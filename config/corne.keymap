@@ -5,10 +5,9 @@
  */
 
 #include <behaviors.dtsi>
+#include "keys_en_gb.h"
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
-#include "keys_en_gb.h"
 
 / {
     keymap {
@@ -39,10 +38,10 @@
 
             label = "Lower";
             bindings = <
-&kp INSERT  &none     &kp PAGE_DOWN   &kp UP_ARROW  &kp PAGE_UP      &none         &kp PAGE_UP      &kp GB_N7  &kp GB_N8  &kp GB_N9  &kp KP_MULTIPLY  &kp KP_DIVIDE
-&kp TAB     &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp DELETE    &kp GB_N0  &kp GB_N4  &kp GB_N5  &kp GB_N6  &kp GB_EQUAL     &kp ENTER
-&kp LCTRL   &trans    &trans          &kp KP_DOT    &kp END          &none         &kp LEFT_ALT     &kp GB_N1  &kp GB_N2  &kp GB_N3  &kp KP_PLUS      &kp KP_SUBTRACT
-                                      &none         &trans           &trans        &trans           &trans           &mo 3
+&kp INSERT  &none     &kp PAGE_DOWN   &kp UP_ARROW  &kp PAGE_UP      &none         &kp PAGE_UP   &kp GB_N7  &kp GB_N8  &kp GB_N9  &kp KP_MULTIPLY  &kp KP_DIVIDE
+&kp TAB     &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp DELETE    &kp GB_N0     &kp GB_N4  &kp GB_N5  &kp GB_N6  &kp GB_EQUAL     &kp ENTER
+&kp LCTRL   &trans    &trans          &kp KP_DOT    &kp END          &kp INSERT    &kp LEFT_ALT  &kp GB_N1  &kp GB_N2  &kp GB_N3  &kp KP_PLUS      &kp KP_SUBTRACT
+                                      &none         &trans           &trans        &trans        &trans     &mo 3
             >;
         };
 
@@ -55,19 +54,19 @@
 
             label = "Raise";
             bindings = <
-&kp TAB    &kp GB_EXCLAMATION          &kp GB_AT_SIGN        &kp GB_POUND_SIGN             &kp DLLR               &kp GB_PERCENT    &kp CARET       &kp AMPS           &kp GB_ASTERISK   &kp GB_GRAVE  &none  &none
-&kp TAB    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GB_LEFT_PARENTHESIS  &kp GB_RIGHT_PARENTHESIS  &kp MINUS    &none  &kp GB_DOUBLE_QUOTES  &kp GB_SINGLE_QUOTE  &kp SLASH  &kp GB_HASH  &kp ENTER
-&kp LSHFT  &kp GB_BACKSLASH            &kp GB_PIPE             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDER    &none           &none      &none       &none   &none  &none
-                                                &mo 3                 &trans                 &trans       &kp LEFT_SHIFT  &trans             &trans
+&kp TAB    &kp GB_EXCLAMATION  &kp GB_AT_SIGN     &kp GB_POUND_SIGN        &kp DLLR                  &kp GB_PERCENT    &kp CARET       &kp AMPS              &kp GB_ASTERISK      &kp GB_GRAVE  &kp GB_TILDE  &none
+&kp TAB    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp GB_LEFT_PARENTHESIS  &kp GB_RIGHT_PARENTHESIS  &kp MINUS         &none           &kp GB_DOUBLE_QUOTES  &kp GB_SINGLE_QUOTE  &kp SLASH     &kp GB_HASH   &kp ENTER
+&kp LSHFT  &kp GB_BACKSLASH    &kp GB_PIPE        &kp LEFT_BRACE           &kp RIGHT_BRACE           &kp UNDER         &none           &none                 &none                &none         &none         &none
+                                                  &mo 3                    &trans                    &trans            &kp LEFT_SHIFT  &trans                &trans
             >;
         };
 
         FunctionLayer {
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&none         &trans        &trans        &trans        &trans        &trans        &trans  &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOLUME_UP &none   &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &trans  &kp C_PREV &kp C_PP &kp C_NEXT &kp C_STOP &trans
-                                          &trans        &trans        &trans        &trans  &trans  &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7  &kp F8             &kp F9      &kp F10          &kp F11     &kp F12
+&none         &trans        &trans        &trans        &trans        &trans        &trans  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &none       &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &trans  &kp C_PREV         &kp C_PP    &kp C_NEXT       &kp C_STOP  &trans
+                                          &trans        &trans        &trans        &trans  &trans             &trans
             >;
         };
     };
