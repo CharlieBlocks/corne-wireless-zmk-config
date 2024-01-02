@@ -38,7 +38,7 @@
 
             label = "Lower";
             bindings = <
-&kp INSERT  &none     &kp PAGE_DOWN   &kp UP_ARROW  &kp PAGE_UP      &none         &kp PAGE_UP   &kp GB_N7  &kp GB_N8  &kp GB_N9  &kp KP_MULTIPLY  &kp KP_DIVIDE
+&kp INSERT  &none     &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN    &none         &kp PAGE_UP   &kp GB_N7  &kp GB_N8  &kp GB_N9  &kp KP_MULTIPLY  &kp KP_DIVIDE
 &kp TAB     &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp DELETE    &kp GB_N0     &kp GB_N4  &kp GB_N5  &kp GB_N6  &kp GB_EQUAL     &kp ENTER
 &kp LCTRL   &trans    &trans          &kp KP_DOT    &kp END          &kp INSERT    &kp LEFT_ALT  &kp GB_N1  &kp GB_N2  &kp GB_N3  &kp KP_PLUS      &kp KP_SUBTRACT
                                       &none         &trans           &trans        &trans        &trans     &mo 3
